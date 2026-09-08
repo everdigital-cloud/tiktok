@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Clone</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="top-header">
+
+        <div class="logo">
+            <span class="logo-t">T</span>ikTok
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="header-right">
+
+            <button class="upload-btn" id="uploadBtn">
+                <i class="fa-solid fa-plus"></i>
+                Upload
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-message"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN LAYOUT ================= -->
+    <main class="app">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <nav>
+
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>For You</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Explore</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Following</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-video"></i>
+                    <span>LIVE</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="login-box">
+                <p>
+                    Log in to follow creators, like videos, and comment.
+                </p>
+
+                <button class="login-btn">
+                    Log in
+                </button>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Company</p>
+                <p>Programs</p>
+                <p>Terms</p>
+                <p>Privacy</p>
+                <p>© 2026 TikTok Clone</p>
+            </div>
+
+        </aside>
+
+
+        <!-- ================= VIDEO FEED ================= -->
+        <section class="feed" id="feed">
+
+
+            <!-- VIDEO 1 -->
+            <article class="video-card">
+
+                <video class="video" src="Download.mp4" loop playsinline muted></video>
+
+                <div class="video-overlay">
+
+                    <!-- VIDEO INFORMATION -->
+                    <div class="video-info">
+
+                        <div class="creator">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Creator">
+
+                            <div>
+                                <h3>@RexTayMusic</h3>
+                                <span>RexTayMusic</span>
+                            </div>
+
+                            <button class="follow-btn">
+                                Follow
+                            </button>
+                        </div>
+
+                        <p class="caption">
+                            Victory Ahead by RexTayMusic
+                        </p>
+
+                        <div class="music">
+                            <i class="fa-solid fa-music"></i> Original sound - RexTayMusic
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIONS -->
+                    <div class="video-actions">
+
+                        <div class="action">
+
+                            <button class="action-btn like-btn" aria-label="Like">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                            <span class="like-count">12.4K</span>
+
+                        </div>
+
+
+                        <div class="action">
+
+                            <button class="action-btn comment-btn">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </button>
+
+                            <span>534</span>
+
+                        </div>
+
+
+                        <div class="action">
+
+                            <button class="action-btn share-btn">
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                            <span>Share</span>
+
+                        </div>
+
+
+                        <div class="action">
+
+                            <button class="action-btn mute-btn">
+                                <i class="fa-solid fa-volume-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VIDEO 2 -->
+            <article class="video-card">
+
+                <video class="video" src="Download (1).mp4" loop playsinline muted></video>
+
+                <div class="video-overlay">
+
+                    <div class="video-info">
+
+                        <div class="creator">
+
+                            <img src="https://i.pravatar.cc/100?img=32" alt="Creator">
+
+                            <div>
+                                <h3>@RexTayMusic</h3>
+                                <span>RexTayMusic</span>
+                            </div>
+
+                            <button class="follow-btn">
+                                Follow
+                            </button>
+
+                        </div>
+
+                        <p class="caption">
+                            Victory Ahead by RexTayMusic
+                        </p>
+
+                        <div class="music">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="video-actions">
+
+                        <div class="action">
+
+                            <button class="action-btn like-btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                            <span class="like-count">8.7K</span>
+
+                        </div>
+
+                        <div class="action">
+
+                            <button class="action-btn comment-btn">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </button>
+
+                            <span>321</span>
+
+                        </div>
+
+                        <div class="action">
+
+                            <button class="action-btn share-btn">
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                            <span>Share</span>
+
+                        </div>
+
+                        <div class="action">
+
+                            <button class="action-btn mute-btn">
+                                <i class="fa-solid fa-volume-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VIDEO 3 -->
+            <article class="video-card">
+
+                <video class="video" src="Download (2).mp4" loop playsinline muted></video>
+
+                <div class="video-overlay">
+
+                    <div class="video-info">
+
+                        <div class="creator">
+
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Creator">
+
+                            <div>
+                                <h3>@RexTayMusic</h3>
+                                <span>RexTayMusic</span>
+                            </div>
+
+                            <button class="follow-btn">
+                                Follow
+                            </button>
+
+                        </div>
+
+                        <p class="caption">
+                            Victory Ahead by RexTayMusic
+                        </p>
+
+                        <div class="music">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="video-actions">
+
+                        <div class="action">
+
+                            <button class="action-btn like-btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                            <span class="like-count">25.2K</span>
+
+                        </div>
+
+                        <div class="action">
+
+                            <button class="action-btn comment-btn">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </button>
+
+                            <span>1.2K</span>
+
+                        </div>
+
+                        <div class="action">
+
+                            <button class="action-btn share-btn">
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                            <span>Share</span>
+
+                        </div>
+
+                        <div class="action">
+
+                            <button class="action-btn mute-btn">
+                                <i class="fa-solid fa-volume-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- VIDEO 4 -->
+    <article class="video-card">
+
+        <video class="video" src="Download (3).mp4" loop playsinline muted></video>
+
+        <div class="video-overlay">
+
+            <div class="video-info">
+
+                <div class="creator">
+
+                    <img src="https://i.pravatar.cc/100?img=5" alt="Creator">
+
+                    <div>
+                        <h3>@RayTaxMusic</h3>
+                        <span>RexTayMusic</span>
+                    </div>
+
+                    <button class="follow-btn">
+                                Follow
+                            </button>
+
+                </div>
+
+                <p class="caption">
+
+                </p>
+
+                <div class="music">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+
+            </div>
+
+
+            <div class="video-actions">
+
+                <div class="action">
+
+                    <button class="action-btn like-btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                    <span class="like-count">25.2K</span>
+
+                </div>
+
+                <div class="action">
+
+                    <button class="action-btn comment-btn">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </button>
+
+                    <span>1.2K</span>
+
+                </div>
+
+                <div class="action">
+
+                    <button class="action-btn share-btn">
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                    <span>Share</span>
+
+                </div>
+
+                <div class="action">
+
+                    <button class="action-btn mute-btn">
+                                <i class="fa-solid fa-volume-xmark"></i>
+                            </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    </section>
+
+    </main>
+
+    <!-- VIDEO 3 -->
+    <article class="video-card">
+
+        <video class="video" src="Download (2).mp4" loop playsinline muted></video>
+
+        <div class="video-overlay">
+
+            <div class="video-info">
+
+                <div class="creator">
+
+                    <img src="https://i.pravatar.cc/100?img=5" alt="Creator">
+
+                    <div>
+                        <h3>@RexTayMusic</h3>
+                        <span>RexTayMusic</span>
+                    </div>
+
+                    <button class="follow-btn">
+                                Follow
+                            </button>
+
+                </div>
+
+                <p class="caption">
+                    Victory Ahead by RexTayMusic
+                </p>
+
+                <div class="music">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+
+            </div>
+
+
+            <div class="video-actions">
+
+                <div class="action">
+
+                    <button class="action-btn like-btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                    <span class="like-count">25.2K</span>
+
+                </div>
+
+                <div class="action">
+
+                    <button class="action-btn comment-btn">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </button>
+
+                    <span>1.2K</span>
+
+                </div>
+
+                <div class="action">
+
+                    <button class="action-btn share-btn">
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                    <span>Share</span>
+
+                </div>
+
+                <div class="action">
+
+                    <button class="action-btn mute-btn">
+                                <i class="fa-solid fa-volume-xmark"></i>
+                            </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    </section>
+
+    </main>
+
+
+    <!-- ================= COMMENTS MODAL ================= -->
+    <div class="comments-modal" id="commentsModal">
+
+        <div class="comments-panel">
+
+            <div class="comments-header">
+
+                <h2>Comments</h2>
+
+                <button id="closeComments">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
+            <div class="comments-list" id="commentsList">
+
+                <div class="comment">
+
+                    <img src="https://i.pravatar.cc/60?img=20" alt="">
+
+                    <div>
+                        <strong>@mike</strong>
+                        <p>This is amazing 🔥</p>
+                        <small>2h ago</small>
+                    </div>
+
+                </div>
+
+
+                <div class="comment">
+
+                    <img src="https://i.pravatar.cc/60?img=25" alt="">
+
+                    <div>
+                        <strong>@sarah</strong>
+                        <p>Love this video ❤️</p>
+                        <small>1h ago</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="comment-input">
+
+                <input type="text" id="commentInput" placeholder="Add comment...">
+
+                <button id="postComment">
+                    Post
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= UPLOAD MODAL ================= -->
+    <div class="upload-modal" id="uploadModal">
+
+        <div class="upload-panel">
+
+            <button class="close-modal" id="closeUpload">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Upload video</h2>
+
+            <label class="upload-area">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <strong>
+                    Select video to upload
+                </strong>
+
+                <span>
+                    MP4 or WebM
+                </span>
+
+                <input
+                    type="file"
+                    id="videoUpload"
+                    accept="video/*"
+                >
+
+            </label>
+
+            <div class="upload-preview" id="uploadPreview"></div>
+
+            <button class="publish-btn" id="publishBtn">
+                Publish
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast">
+        Copied!
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
