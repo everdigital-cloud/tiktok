@@ -1080,10 +1080,13 @@ window.addEventListener(
 
         if (firstVideo) {
 
-            firstVideo
-                .play()
-                .catch(() => {});
+            document.addEventListener("click", () => {
 
+                document.querySelectorAll(".video").forEach(video => {
+                    video.muted = false;
+                });
+
+            }, { once: true });
         }
 
     }
